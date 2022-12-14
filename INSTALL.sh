@@ -64,7 +64,7 @@ install_packages(){
             $SUDO $INSTALL $package
         done
     else
-        echo "SamTech could not install dependencies,exiting process."
+        echo "Kibalanga could not install dependencies,exiting process."
         exit
     fi
 }
@@ -81,10 +81,10 @@ envinfo
 install_packages
 clear
 figlet Secktor
-echo "Cloning SAM-OCHUU git repo..."
-read -p "Enter Your github username: " secktor
-git clone https://github.com/"${SamTech}"/Secktor-Md
-cd Secktor-Md
+echo "Cloning Kibalanga git repo..."
+read -p "Enter Your github username: " Kibalanga
+git clone https://github.com/"${SAM-OCHU}"/Kibalanga-Bot
+cd Kibalanga-Bot
 clear
 echo "Installing required packages,it will take time..."
 pauseagain() {
@@ -113,9 +113,9 @@ figlet Vars
 cat config.env
 read -n1 -r -p "Press any key to continue..." key
 clear
-figlet SpeedY
-echo "TheSpeedY"
-echo "To stop bot: ctrl+c then npm stop secktor"
+figlet SAM OCHU
+echo "SAM OCHU"
+echo "To stop bot: ctrl+c then npm stop Kibalanga"
 npm start
 
 
