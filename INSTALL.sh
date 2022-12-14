@@ -1,13 +1,13 @@
-#|--------------------------------------------------------------------------------------------------------|
-#|                                                                                                                     |
-#|   Copyright (C) 2022 SamOchu                                                              |
-#|   SAM OCHU TECHNOLOGY BRAND 2022                                           |
-#|   Whatsapp Userbot with shell script program,                                    |
-#|   to install in Termux                                                                                 |
-#|   @author : SAM OCHU                                                                            |
-#|   @description: SAM TECH BOT,A Multi-functional whatsapp bot.   |
-#|                                                                                                                      |
-#|---------------------------------------------------------------------------------------------------------|
+#|------------------------------------------------------------|
+#|                                                            |
+#|   Copyright (C) 2022 SAM-OCHU                          |
+#|   Secktor UB 2022                                          |
+#|   Whatsapp Userbot with shell script program,        |
+#|   to install in any environment                            |
+#|   @author : SAM-OCHU                                   |
+#|   @description: Kibalanga,A Multi-functional whatsapp bot.   |
+#|                                                            |
+#|------------------------------------------------------------|
 
 pause() {
     read -n1 -r -p "Press any key to start process..." key
@@ -80,10 +80,10 @@ getinfo
 envinfo
 install_packages
 clear
-figlet Secktor
+figlet Kibalanga
 echo "Cloning Kibalanga git repo..."
 read -p "Enter Your github username: " Kibalanga
-git clone https://github.com/"${SAM-OCHU}"/Kibalanga-Bot
+git clone https://github.com/"${Kibalanga}"/Kibalanga-Bot
 cd Kibalanga-Bot
 clear
 echo "Installing required packages,it will take time..."
@@ -99,7 +99,7 @@ clear
 echo "Installed packages.."
 echo "Starting Bot Server..."
 clear
-figlet Secktor
+figlet Kibalanga
 read -p "Enter Your Owner Number: " owner
 echo "OWNER_NUMBER=${owner}" >> config.env
 #--------------------------------------------
@@ -113,17 +113,7 @@ figlet Vars
 cat config.env
 read -n1 -r -p "Press any key to continue..." key
 clear
-figlet SAM OCHU
-echo "SAM OCHU"
-echo "To stop bot: ctrl+c then npm stop Kibalanga"
+figlet Sam Ochu
+echo "Sam Ochu"
+echo "To stop bot: ctrl+c then npm stop secktor"
 npm start
-
-
-
-
-
-
-
-
-
-
