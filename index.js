@@ -1,6 +1,6 @@
 // whatsappConnection.js
 
-import makeWASocket, { DisconnectReason } from '@SAM-OCHU/baileys'
+import makeWASocket, { DisconnectReason } from '@whiskeysockets/baileys'
 import { Boom } from '@hapi/boom'
 
 async function connectToWhatsApp() {
